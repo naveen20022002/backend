@@ -11,7 +11,6 @@ const imageDownloader = require('image-downloader');
 const multer = require('multer');
 const fs = require('fs');
 const PORT = process.env.BASE_URL || 4000
-// const PORT = 'https://hotelbooking2.onrender.com';
 
 const app = express();
 
