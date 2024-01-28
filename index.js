@@ -24,7 +24,7 @@ app.use(cookieParser());
 //     credentials: true,
 //     origin: 'http://localhost:5173',
 // }));
-// app.use(cors());
+app.use(cors());
 
 function getUserDataFromReq(req){
     return new Promise((resolve, reject)=>{
