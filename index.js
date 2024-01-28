@@ -59,7 +59,7 @@ app.post('/login', async (req, res)=>{
         if(passOk){
             jwt.sign({email:userDoc.email, id:userDoc._id, name:userDoc.name}, jwtSecret, {}, (error, token)=>{
                 if(error) throw error;
-                res.cookie('token', token, { SameSite=None }).json(userDoc);
+                res.cookie('token', token, { sameSite: 'None' }).json(userDoc);
             });
         }
         else{
