@@ -10,7 +10,7 @@ const cookieParser = require('cookie-parser');
 const imageDownloader = require('image-downloader');
 const multer = require('multer');
 const fs = require('fs');
-// const PORT = process.env.BASE_URL || 4000
+const PORT = process.env.BASE_URL || 4000
 // const PORT = 'https://hotelbooking2.onrender.com';
 
 const app = express();
@@ -21,14 +21,6 @@ const jwtSecret = 'kljdklajsdkfkaf';
 app.use('/uploads', express.static(__dirname +'/uploads'));
 app.use(express.json());
 app.use(cookieParser());
-
-// app.use((req, res, next) => {
-//   res.header('Access-Control-Allow-Origin', '*');
-//   res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
-//   res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-//   next();
-// });
-
 app.use(cors({
     credentials: true,
     origin: 'http://localhost:5173',
