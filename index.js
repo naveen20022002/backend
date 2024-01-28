@@ -22,7 +22,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
     credentials: true,
-    origin: 'https:/localhost:5173',
+    origin: 'https://localhost:5173',
 }));
 // app.use(cors());
 
