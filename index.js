@@ -22,7 +22,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
     credentials: true,
-    origin: 'https://hotelbooking2.onrender.com',
+    origin: 'https://localhost:4000',
 }));
 // app.use(cors());
 
