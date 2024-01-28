@@ -20,11 +20,11 @@ const jwtSecret = 'kljdklajsdkfkaf';
 app.use('/uploads', express.static(__dirname +'/uploads'));
 app.use(express.json());
 app.use(cookieParser());
-// app.use(cors({
-//     credentials: true,
-//     origin: 'https://hotelbooking2.onrender.com',
-// }));
-app.use(cors());
+app.use(cors({
+    credentials: true,
+    origin: 'https:/localhost:4000',
+}));
+// app.use(cors());
 
 function getUserDataFromReq(req){
     return new Promise((resolve, reject)=>{
