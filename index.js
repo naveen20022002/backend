@@ -122,7 +122,7 @@ app.post('/places', (req, res)=>{
             owner: userData.id,
             title, address, photos: addedPhotos, description, perks, extraInfo, checkIn, checkOut, maxGuests, price
         })
-        res.json(userDoc);
+        res.json(userDoc.id);
     });
 })
 
