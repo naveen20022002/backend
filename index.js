@@ -10,8 +10,8 @@ const cookieParser = require('cookie-parser');
 const imageDownloader = require('image-downloader');
 const multer = require('multer');
 const fs = require('fs');
-// const PORT = process.env.BASE_URL || 4000
-const PORT = 'https://hotelbooking3-0.onrender.com';
+const PORT = process.env.BASE_URL || 4000
+// const PORT = 'https://hotelbooking3-0.onrender.com';
 
 const app = express();
 
