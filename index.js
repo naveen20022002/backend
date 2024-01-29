@@ -21,10 +21,10 @@ const jwtSecret = 'kljdklajsdkfkaf';
 app.use('/uploads', express.static(__dirname +'/uploads'));
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors({
-    credentials: true,
-    origin: 'https://naveen-hotel-booking.netlify.app',
-}));
+// app.use(cors({
+//     credentials: true,
+//     origin: 'https://naveen-hotel-booking.netlify.app',
+// }));
 // app.use(cors());
 
 function getUserDataFromReq(req){
