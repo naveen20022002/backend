@@ -25,7 +25,7 @@ app.use(cookieParser());
 //     credentials: true,
 //     origin: 'https://naveen-hotel-booking.netlify.app',
 // }));
-// app.use(cors());
+app.use(cors());
 
 function getUserDataFromReq(req){
     return new Promise((resolve, reject)=>{
